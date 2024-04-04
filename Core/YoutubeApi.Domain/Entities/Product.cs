@@ -9,6 +9,10 @@ namespace YoutubeApi.Domain.Entities
 {
     public class Product:EntityBase
     {
+        public Product()
+        {
+        }
+
         public Product(string title,string description,int brandId,decimal price,decimal discount)
         {
             Title = title;
@@ -17,6 +21,8 @@ namespace YoutubeApi.Domain.Entities
             Price = price;
             Discount = discount;
         }
+
+
         public required string Title { get; set; }
         public required string Description { get; set; }
         public required int BrandId { get; set; }
