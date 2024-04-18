@@ -7,7 +7,7 @@ using YoutubeApi.Domain.Common;
 
 namespace YoutubeApi.Domain.Entities
 {
-    public class Product:EntityBase
+    public class Product : EntityBase
     {
         public Product()
         {
