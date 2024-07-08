@@ -72,10 +72,6 @@ namespace YoutubeApi.Persistence.Repositories
 
         }
 
-
-        public IQueryable<T> Find(Expression<Func<T, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
