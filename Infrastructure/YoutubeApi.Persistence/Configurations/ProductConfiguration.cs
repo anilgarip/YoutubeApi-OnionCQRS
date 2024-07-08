@@ -39,6 +39,7 @@ namespace YoutubeApi.Persistence.Configurations
                 Price = faker.Finance.Amount(10, 1000),
                 CreatedDate = DateTime.Now
             };
+            builder.HasData(product1, product2);
         }
     }
 }
