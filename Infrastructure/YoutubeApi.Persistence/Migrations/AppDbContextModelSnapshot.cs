@@ -64,23 +64,23 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 568, DateTimeKind.Local).AddTicks(686),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 785, DateTimeKind.Local).AddTicks(1175),
                             IsDeleted = false,
-                            Name = "Automotive, Baby & Games"
+                            Name = "Toys, Music & Health"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 568, DateTimeKind.Local).AddTicks(692),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 785, DateTimeKind.Local).AddTicks(1189),
                             IsDeleted = false,
-                            Name = "Industrial"
+                            Name = "Automotive"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 568, DateTimeKind.Local).AddTicks(697),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 785, DateTimeKind.Local).AddTicks(1198),
                             IsDeleted = true,
-                            Name = "Movies"
+                            Name = "Books"
                         });
                 });
 
@@ -117,7 +117,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 569, DateTimeKind.Local).AddTicks(8960),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 789, DateTimeKind.Local).AddTicks(443),
                             IsDeleted = false,
                             Name = "Elektronik",
                             ParentId = 0,
@@ -126,7 +126,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 569, DateTimeKind.Local).AddTicks(8962),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 789, DateTimeKind.Local).AddTicks(448),
                             IsDeleted = false,
                             Name = "Moda",
                             ParentId = 0,
@@ -135,7 +135,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 569, DateTimeKind.Local).AddTicks(8963),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 789, DateTimeKind.Local).AddTicks(450),
                             IsDeleted = false,
                             Name = "Bilgisayar",
                             ParentId = 1,
@@ -144,7 +144,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 569, DateTimeKind.Local).AddTicks(8965),
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 789, DateTimeKind.Local).AddTicks(452),
                             IsDeleted = false,
                             Name = "Kadın",
                             ParentId = 2,
@@ -188,28 +188,28 @@ namespace YoutubeApi.Persistence.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 571, DateTimeKind.Local).AddTicks(5326),
-                            Description = "Totam sit quis ratione quaerat.",
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 792, DateTimeKind.Local).AddTicks(3516),
+                            Description = "Çobanın patlıcan eum dolore anlamsız.",
                             IsDeleted = false,
-                            Title = "Masanın."
+                            Title = "Düşünüyor."
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 571, DateTimeKind.Local).AddTicks(5448),
-                            Description = "Praesentium voluptas architecto lambadaki öyle.",
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 792, DateTimeKind.Local).AddTicks(3577),
+                            Description = "Telefonu öyle nesciunt corporis dağılımı.",
                             IsDeleted = true,
-                            Title = "Karşıdakine çünkü."
+                            Title = "Voluptatem sed."
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2024, 4, 4, 16, 45, 51, 571, DateTimeKind.Local).AddTicks(5482),
-                            Description = "Umut iusto yaptı consectetur autem.",
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 792, DateTimeKind.Local).AddTicks(3639),
+                            Description = "Sevindi veritatis consequuntur dicta praesentium.",
                             IsDeleted = false,
-                            Title = "Ekşili ullam."
+                            Title = "Ona iure."
                         });
                 });
 
@@ -249,6 +249,52 @@ namespace YoutubeApi.Persistence.Migrations
                     b.HasIndex("BrandId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 30,
+                            BrandId = 1,
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 795, DateTimeKind.Local).AddTicks(2096),
+                            Description = "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+                            Discount = 2.299628415369520m,
+                            IsDeleted = false,
+                            Price = 197.17m,
+                            Title = "Generic Wooden Hat"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            BrandId = 3,
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 795, DateTimeKind.Local).AddTicks(2136),
+                            Description = "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+                            Discount = 0.4410795668002380m,
+                            IsDeleted = false,
+                            Price = 449.05m,
+                            Title = "Ergonomic Fresh Chips"
+                        },
+                        new
+                        {
+                            Id = 1,
+                            BrandId = 1,
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 795, DateTimeKind.Local).AddTicks(2400),
+                            Description = "Ürün 1 Açıklaması",
+                            Discount = 10m,
+                            IsDeleted = false,
+                            Price = 100m,
+                            Title = "Ürün 1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            BrandId = 2,
+                            CreatedDate = new DateTime(2024, 7, 11, 10, 47, 43, 795, DateTimeKind.Local).AddTicks(2403),
+                            Description = "Ürün 2 Açıklaması",
+                            Discount = 15m,
+                            IsDeleted = false,
+                            Price = 200m,
+                            Title = "Ürün 2"
+                        });
                 });
 
             modelBuilder.Entity("CategoryProduct", b =>

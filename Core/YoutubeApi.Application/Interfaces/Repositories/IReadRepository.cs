@@ -27,5 +27,7 @@ namespace YoutubeApi.Application.Interfaces.Repositories
          IQueryable<T> Find(Expression<Func<T, bool>> predicate, bool enableTracking = false);
 
         Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null);
+
+
     }
 }

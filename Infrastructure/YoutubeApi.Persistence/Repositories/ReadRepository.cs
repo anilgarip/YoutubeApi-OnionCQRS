@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using YoutubeApi.Application.Interfaces.Repositories;
 using YoutubeApi.Domain.Common;
+using YoutubeApi.Domain.Entities;
 
 namespace YoutubeApi.Persistence.Repositories
 {
@@ -34,6 +35,7 @@ namespace YoutubeApi.Persistence.Repositories
             return await queryable.ToListAsync();
                 
         }
+   
 
         public async Task<IList<T>> GetAllByPagingAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, bool enableTracking = false, int currentPage = 1, int pageSize = 3)
         {

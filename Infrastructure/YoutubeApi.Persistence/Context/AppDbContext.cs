@@ -69,6 +69,7 @@ namespace YoutubeApi.Persistence.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.SeedInitialData();
         }
     }
 }

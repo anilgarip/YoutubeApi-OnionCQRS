@@ -19,7 +19,7 @@ namespace YoutubeApi.Persistence.Configurations
 
             Product product1 = new()
             {
-                Id = 1,
+                Id = 30,
                 IsDeleted = false,
                 BrandId = 1,
                 Title = faker.Commerce.ProductName(),
@@ -31,7 +31,7 @@ namespace YoutubeApi.Persistence.Configurations
 
             Product product2 = new()
             {
-                Id = 2,
+                Id = 40,
                 IsDeleted = false,
                 BrandId = 3,
                 Title = faker.Commerce.ProductName(),
