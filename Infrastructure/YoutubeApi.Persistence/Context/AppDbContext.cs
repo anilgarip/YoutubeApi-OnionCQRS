@@ -14,7 +14,7 @@ namespace YoutubeApi.Persistence.Context
     // ApplicationDbContextSeed.cs
     public static class ApplicationDbContextSeed
     {
-        public static void SeedInitialData(this ModelBuilder modelBuilder)
+        /*public static void SeedInitialData(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasData(
                 new Product
@@ -43,7 +43,7 @@ namespace YoutubeApi.Persistence.Context
             );
 
             // Diğer tablolar için de aynı şekilde seed işlemi yapılabilir
-        }
+        }*/
     }
 
     public class AppDbContext : DbContext
@@ -64,12 +64,20 @@ namespace YoutubeApi.Persistence.Context
         public DbSet<Detail> Details { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            modelBuilder.SeedInitialData();
+            // modelBuilder.SeedInitialData();
+            modelBuilder.Entity<Product>()
+         .Property(p => p.Discount)
+         .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
         }
     }
 }

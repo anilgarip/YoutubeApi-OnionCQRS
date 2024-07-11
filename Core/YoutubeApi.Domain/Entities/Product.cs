@@ -21,7 +21,7 @@ namespace YoutubeApi.Domain.Entities
             Price = price;
             Discount = discount;
         }
-
+        
 
         public string Title { get; set; }
         public string Description { get; set; }
@@ -31,7 +31,7 @@ namespace YoutubeApi.Domain.Entities
 
         public Brand Brand { get; set; }
 
-        public ICollection<Category> Categories { get; set; }
+        public ICollection<ProductCategory> ProductCategories { get; set; }
         // public required string ImagePath { get; set; }
 
 

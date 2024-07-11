@@ -21,7 +21,7 @@ namespace YoutubeApi.Domain.Entities
         public int Priority { get; set; }
 
         public ICollection<Detail> Details { get; set; } // çoka çok ilişki için ICollection olarak birbirine(Category <=> Product) eklemek gerekiyor
-        public ICollection<Product> Products{ get; set; }
+        public ICollection<ProductCategory> ProductCategories { get; set; }
 
     }
 }
