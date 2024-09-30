@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YoutubeApi.Persistence.Context;
 
@@ -11,9 +12,11 @@ using YoutubeApi.Persistence.Context;
 namespace YoutubeApi.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240827141434_IdentityDbContextAdded")]
+    partial class IdentityDbContextAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -152,23 +155,23 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 457, DateTimeKind.Local).AddTicks(7007),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 712, DateTimeKind.Local).AddTicks(6498),
                             IsDeleted = false,
-                            Name = "Outdoors & Tools"
+                            Name = "Jewelery, Kids & Toys"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 457, DateTimeKind.Local).AddTicks(7055),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 712, DateTimeKind.Local).AddTicks(6520),
                             IsDeleted = false,
-                            Name = "Jewelery, Baby & Games"
+                            Name = "Tools & Movies"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 457, DateTimeKind.Local).AddTicks(7064),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 712, DateTimeKind.Local).AddTicks(6540),
                             IsDeleted = true,
-                            Name = "Beauty"
+                            Name = "Toys, Tools & Shoes"
                         });
                 });
 
@@ -205,7 +208,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 459, DateTimeKind.Local).AddTicks(5790),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 725, DateTimeKind.Local).AddTicks(3387),
                             IsDeleted = false,
                             Name = "Elektronik",
                             ParentId = 0,
@@ -214,7 +217,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 459, DateTimeKind.Local).AddTicks(5792),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 725, DateTimeKind.Local).AddTicks(3390),
                             IsDeleted = false,
                             Name = "Moda",
                             ParentId = 0,
@@ -223,7 +226,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 459, DateTimeKind.Local).AddTicks(5794),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 725, DateTimeKind.Local).AddTicks(3392),
                             IsDeleted = false,
                             Name = "Bilgisayar",
                             ParentId = 1,
@@ -232,7 +235,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 459, DateTimeKind.Local).AddTicks(5795),
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 725, DateTimeKind.Local).AddTicks(3393),
                             IsDeleted = false,
                             Name = "Kadın",
                             ParentId = 2,
@@ -276,28 +279,28 @@ namespace YoutubeApi.Persistence.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 461, DateTimeKind.Local).AddTicks(2698),
-                            Description = "Çakıl commodi aspernatur sit sevindi.",
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 726, DateTimeKind.Local).AddTicks(9043),
+                            Description = "Türemiş voluptatem bahar deleniti göze.",
                             IsDeleted = false,
-                            Title = "Batarya."
+                            Title = "Sit."
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 461, DateTimeKind.Local).AddTicks(2742),
-                            Description = "Anlamsız voluptate voluptatem aliquam voluptatum.",
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 726, DateTimeKind.Local).AddTicks(9084),
+                            Description = "İpsum amet dolayı incidunt perferendis.",
                             IsDeleted = true,
-                            Title = "Un ışık."
+                            Title = "Olduğu sıradanlıktan."
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 461, DateTimeKind.Local).AddTicks(2794),
-                            Description = "Consectetur aperiam voluptas türemiş beatae.",
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 726, DateTimeKind.Local).AddTicks(9115),
+                            Description = "Nihil dolayı orta veritatis lambadaki.",
                             IsDeleted = false,
-                            Title = "Laboriosam gidecekmiş."
+                            Title = "Bilgiyasayarı gördüm."
                         });
                 });
 
@@ -343,23 +346,23 @@ namespace YoutubeApi.Persistence.Migrations
                         {
                             Id = 30,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 463, DateTimeKind.Local).AddTicks(6280),
-                            Description = "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-                            Discount = 4.405961424249160m,
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 728, DateTimeKind.Local).AddTicks(9751),
+                            Description = "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                            Discount = 5.606103602859040m,
                             IsDeleted = false,
-                            Price = 704.08m,
-                            Title = "Sleek Fresh Fish"
+                            Price = 170.75m,
+                            Title = "Generic Steel Ball"
                         },
                         new
                         {
                             Id = 40,
                             BrandId = 3,
-                            CreatedDate = new DateTime(2024, 9, 30, 16, 18, 30, 463, DateTimeKind.Local).AddTicks(6300),
-                            Description = "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-                            Discount = 1.377271359737350m,
+                            CreatedDate = new DateTime(2024, 8, 27, 17, 14, 34, 728, DateTimeKind.Local).AddTicks(9775),
+                            Description = "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+                            Discount = 9.239165367728640m,
                             IsDeleted = false,
-                            Price = 918.56m,
-                            Title = "Rustic Concrete Chips"
+                            Price = 787.05m,
+                            Title = "Handmade Wooden Ball"
                         });
                 });
 
@@ -388,6 +391,10 @@ namespace YoutubeApi.Persistence.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -395,6 +402,13 @@ namespace YoutubeApi.Persistence.Migrations
                     b.Property<string>("NormalizedName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("RefreshToken")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RefreshTokenExpireTime")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -426,10 +440,6 @@ namespace YoutubeApi.Persistence.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
@@ -452,13 +462,6 @@ namespace YoutubeApi.Persistence.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<string>("RefreshToken")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RefreshTokenExpireTime")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

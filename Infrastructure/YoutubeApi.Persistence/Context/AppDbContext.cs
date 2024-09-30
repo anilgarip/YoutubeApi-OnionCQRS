@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,42 +12,8 @@ using YoutubeApi.Persistence.Configurations;
 namespace YoutubeApi.Persistence.Context
 {
 
-    // ApplicationDbContextSeed.cs
-    public static class ApplicationDbContextSeed
-    {
-        /*public static void SeedInitialData(this ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Product>().HasData(
-                new Product
-                {
-                    Id = 1,
-                    Title = "Ürün 1",
-                    Description = "Ürün 1 Açıklaması",
-                    BrandId = 1,
-                    Price = 100,
-                    Discount = 10,
-                    CreatedDate = DateTime.Now,
-                    IsDeleted = false
-                },
-                new Product
-                {
-                    Id = 2,
-                    Title = "Ürün 2",
-                    Description = "Ürün 2 Açıklaması",
-                    BrandId = 2,
-                    Price = 200,
-                    Discount = 15,
-                    CreatedDate = DateTime.Now,
-                    IsDeleted = false
-                }
-            // Diğer ürünler buraya eklenebilir
-            );
 
-            // Diğer tablolar için de aynı şekilde seed işlemi yapılabilir
-        }*/
-    }
-
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User, Role, Guid>
     {
 
         public AppDbContext()
@@ -80,5 +47,5 @@ namespace YoutubeApi.Persistence.Context
                 .HasColumnType("decimal(18,2)");
         }
     }
-}
 
+}
