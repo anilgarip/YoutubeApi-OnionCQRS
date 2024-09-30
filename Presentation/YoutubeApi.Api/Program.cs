@@ -1,5 +1,6 @@
 using YoutubeApi.Persistence;
 using YoutubeApi.Application;
+using YoutubeApi.Infrastructure;
 using YoutubeApi.Mapper;
 using Microsoft.EntityFrameworkCore;
 using YoutubeApi.Application.Exceptions;
@@ -19,6 +20,7 @@ builder.Configuration
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
 builder.Services.AddCustomMapper();
 
