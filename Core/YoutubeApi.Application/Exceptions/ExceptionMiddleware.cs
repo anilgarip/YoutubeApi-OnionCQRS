@@ -21,12 +21,12 @@ namespace YoutubeApi.Application.Exceptions
 			catch (Exception ex)
 			{
 
-				await HanldeExceptionAsync(httpContext, ex);
+				await HandleExceptionAsync(httpContext, ex);
 
             }
         }
 
-		private static Task HanldeExceptionAsync(HttpContext httpContext, Exception exception)
+		private static Task HandleExceptionAsync(HttpContext httpContext, Exception exception)
 		{
 			int statusCode = GetStatusCode(exception);
 			httpContext.Response.ContentType = "application/json";
