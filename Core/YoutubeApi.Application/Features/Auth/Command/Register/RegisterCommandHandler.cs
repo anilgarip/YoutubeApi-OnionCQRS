@@ -44,10 +44,17 @@ namespace YoutubeApi.Application.Features.Auth.Command.Register
                         Name = "user",
                         NormalizedName = "USER",
                         ConcurrencyStamp = Guid.NewGuid().ToString(),
+                      
                     });
                 await userManager.AddToRoleAsync(user, "user");
             }
+            if (!result.Succeeded)
+            {
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                throw new Exception($"User creation failed: {errors}");
+            }
             return Unit.Value;
         }
+
     }
 }

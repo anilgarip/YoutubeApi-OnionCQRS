@@ -11,195 +11,187 @@ namespace YoutubeApi.Persistence.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "RefreshToken",
-                table: "AspNetUsers",
-                type: "nvarchar(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+            migrationBuilder.DropColumn(
+                name: "FullName",
+                table: "AspNetRoles");
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7771), "Movies" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5865), "Health & Movies" });
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7775), "Music" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5871), "Tools" });
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7836), "Computers, Shoes & Automotive" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5885), "Outdoors, Tools & Kids" });
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(804));
+                value: new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9425));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(807));
+                value: new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9427));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(808));
+                value: new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9429));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(810));
+                value: new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9430));
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1867), "İnventore illo yaptı quia karşıdakine.", "Voluptatem." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(183), "Koyun voluptatem sıla neque camisi.", "Ea." });
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1899), "Vel açılmadan consectetur dicta kalemi.", "Dignissimos ipsam." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(214), "Exercitationem masaya non ipsum quis.", "Numquam esse." });
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1946), "Consequatur gazete quia doğru ut.", "Ratione magnam." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(240), "Hesap açılmadan patlıcan quis kutusu.", "Masaya ipsa." });
 
             migrationBuilder.UpdateData(
                 table: "Products",
                 keyColumn: "Id",
                 keyValue: 30,
                 columns: new[] { "CreatedDate", "Description", "Discount", "Price", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 339, DateTimeKind.Local).AddTicks(9721), "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit", 2.650820731249660m, 814.22m, "Rustic Frozen Pizza" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 551, DateTimeKind.Local).AddTicks(5596), "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", 7.130263589705850m, 729.05m, "Intelligent Plastic Soap" });
 
             migrationBuilder.UpdateData(
                 table: "Products",
                 keyColumn: "Id",
                 keyValue: 40,
                 columns: new[] { "CreatedDate", "Description", "Discount", "Price", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 54, 46, 339, DateTimeKind.Local).AddTicks(9743), "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support", 9.322216669781790m, 83.04m, "Generic Rubber Mouse" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 56, 52, 551, DateTimeKind.Local).AddTicks(5622), "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive", 7.117452822930320m, 270.28m, "Unbranded Plastic Sausages" });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "RefreshToken",
-                table: "AspNetUsers",
+            migrationBuilder.AddColumn<string>(
+                name: "FullName",
+                table: "AspNetRoles",
                 type: "nvarchar(max)",
-                nullable: false,
-                defaultValue: "",
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)",
-                oldNullable: true);
+                nullable: true);
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 443, DateTimeKind.Local).AddTicks(1066), "Automotive, Grocery & Shoes" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 589, DateTimeKind.Local).AddTicks(5720), "Jewelery" });
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 443, DateTimeKind.Local).AddTicks(1081), "Movies & Home" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 589, DateTimeKind.Local).AddTicks(5767), "Sports & Beauty" });
 
             migrationBuilder.UpdateData(
                 table: "Brands",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "CreatedDate", "Name" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 443, DateTimeKind.Local).AddTicks(1091), "Grocery & Games" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 589, DateTimeKind.Local).AddTicks(5776), "Kids & Toys" });
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 47, 51, 444, DateTimeKind.Local).AddTicks(6868));
+                value: new DateTime(2024, 10, 31, 10, 49, 50, 590, DateTimeKind.Local).AddTicks(7455));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 47, 51, 444, DateTimeKind.Local).AddTicks(6870));
+                value: new DateTime(2024, 10, 31, 10, 49, 50, 590, DateTimeKind.Local).AddTicks(7457));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 47, 51, 444, DateTimeKind.Local).AddTicks(6871));
+                value: new DateTime(2024, 10, 31, 10, 49, 50, 590, DateTimeKind.Local).AddTicks(7459));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "CreatedDate",
-                value: new DateTime(2024, 10, 30, 14, 47, 51, 444, DateTimeKind.Local).AddTicks(6873));
+                value: new DateTime(2024, 10, 31, 10, 49, 50, 590, DateTimeKind.Local).AddTicks(7466));
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 446, DateTimeKind.Local).AddTicks(2607), "Otobüs aliquid et quasi sayfası.", "Autem." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 591, DateTimeKind.Local).AddTicks(7633), "Koşuyorlar quia sit autem eos.", "Makinesi." });
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 2,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 446, DateTimeKind.Local).AddTicks(2724), "Okuma cesurca voluptate sıfat eaque.", "Beatae magnam." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 591, DateTimeKind.Local).AddTicks(7661), "Kalemi dolor aut sequi ipsam.", "Sed çorba." });
 
             migrationBuilder.UpdateData(
                 table: "Details",
                 keyColumn: "Id",
                 keyValue: 3,
                 columns: new[] { "CreatedDate", "Description", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 446, DateTimeKind.Local).AddTicks(2750), "Voluptatem beatae tv qui sıradanlıktan.", "Autem quia." });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 591, DateTimeKind.Local).AddTicks(7688), "Otobüs vel laudantium velit modi.", "Anlamsız gül." });
 
             migrationBuilder.UpdateData(
                 table: "Products",
                 keyColumn: "Id",
                 keyValue: 30,
                 columns: new[] { "CreatedDate", "Description", "Discount", "Price", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 448, DateTimeKind.Local).AddTicks(4628), "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", 0.4972394194038990m, 709.84m, "Generic Steel Shoes" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 593, DateTimeKind.Local).AddTicks(2221), "The Football Is Good For Training And Recreational Purposes", 7.325572845161340m, 415.50m, "Ergonomic Granite Pizza" });
 
             migrationBuilder.UpdateData(
                 table: "Products",
                 keyColumn: "Id",
                 keyValue: 40,
                 columns: new[] { "CreatedDate", "Description", "Discount", "Price", "Title" },
-                values: new object[] { new DateTime(2024, 10, 30, 14, 47, 51, 448, DateTimeKind.Local).AddTicks(4651), "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals", 7.218958112228980m, 821.50m, "Incredible Wooden Towels" });
+                values: new object[] { new DateTime(2024, 10, 31, 10, 49, 50, 593, DateTimeKind.Local).AddTicks(2240), "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients", 2.765383580430050m, 96.12m, "Awesome Fresh Chair" });
         }
     }
 }

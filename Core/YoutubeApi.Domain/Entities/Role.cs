@@ -9,6 +9,6 @@ namespace YoutubeApi.Domain.Entities
 {
     public class Role : IdentityRole<Guid>
     {
-
+       
     }
 }

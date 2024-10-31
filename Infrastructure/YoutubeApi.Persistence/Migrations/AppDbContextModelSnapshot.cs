@@ -152,23 +152,23 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7771),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5865),
                             IsDeleted = false,
-                            Name = "Movies"
+                            Name = "Health & Movies"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7775),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5871),
                             IsDeleted = false,
-                            Name = "Music"
+                            Name = "Tools"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 335, DateTimeKind.Local).AddTicks(7836),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 547, DateTimeKind.Local).AddTicks(5885),
                             IsDeleted = true,
-                            Name = "Computers, Shoes & Automotive"
+                            Name = "Outdoors, Tools & Kids"
                         });
                 });
 
@@ -205,7 +205,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(804),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9425),
                             IsDeleted = false,
                             Name = "Elektronik",
                             ParentId = 0,
@@ -214,7 +214,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(807),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9427),
                             IsDeleted = false,
                             Name = "Moda",
                             ParentId = 0,
@@ -223,7 +223,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(808),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9429),
                             IsDeleted = false,
                             Name = "Bilgisayar",
                             ParentId = 1,
@@ -232,7 +232,7 @@ namespace YoutubeApi.Persistence.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 337, DateTimeKind.Local).AddTicks(810),
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 548, DateTimeKind.Local).AddTicks(9430),
                             IsDeleted = false,
                             Name = "Kadın",
                             ParentId = 2,
@@ -276,28 +276,28 @@ namespace YoutubeApi.Persistence.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1867),
-                            Description = "İnventore illo yaptı quia karşıdakine.",
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(183),
+                            Description = "Koyun voluptatem sıla neque camisi.",
                             IsDeleted = false,
-                            Title = "Voluptatem."
+                            Title = "Ea."
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1899),
-                            Description = "Vel açılmadan consectetur dicta kalemi.",
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(214),
+                            Description = "Exercitationem masaya non ipsum quis.",
                             IsDeleted = true,
-                            Title = "Dignissimos ipsam."
+                            Title = "Numquam esse."
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 4,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 338, DateTimeKind.Local).AddTicks(1946),
-                            Description = "Consequatur gazete quia doğru ut.",
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 550, DateTimeKind.Local).AddTicks(240),
+                            Description = "Hesap açılmadan patlıcan quis kutusu.",
                             IsDeleted = false,
-                            Title = "Ratione magnam."
+                            Title = "Masaya ipsa."
                         });
                 });
 
@@ -343,23 +343,23 @@ namespace YoutubeApi.Persistence.Migrations
                         {
                             Id = 30,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 339, DateTimeKind.Local).AddTicks(9721),
-                            Description = "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-                            Discount = 2.650820731249660m,
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 551, DateTimeKind.Local).AddTicks(5596),
+                            Description = "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+                            Discount = 7.130263589705850m,
                             IsDeleted = false,
-                            Price = 814.22m,
-                            Title = "Rustic Frozen Pizza"
+                            Price = 729.05m,
+                            Title = "Intelligent Plastic Soap"
                         },
                         new
                         {
                             Id = 40,
                             BrandId = 3,
-                            CreatedDate = new DateTime(2024, 10, 30, 14, 54, 46, 339, DateTimeKind.Local).AddTicks(9743),
-                            Description = "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
-                            Discount = 9.322216669781790m,
+                            CreatedDate = new DateTime(2024, 10, 31, 10, 56, 52, 551, DateTimeKind.Local).AddTicks(5622),
+                            Description = "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+                            Discount = 7.117452822930320m,
                             IsDeleted = false,
-                            Price = 83.04m,
-                            Title = "Generic Rubber Mouse"
+                            Price = 270.28m,
+                            Title = "Unbranded Plastic Sausages"
                         });
                 });
 
@@ -427,7 +427,6 @@ namespace YoutubeApi.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
